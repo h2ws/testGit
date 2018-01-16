@@ -9,7 +9,14 @@ def quickSort(arr,begin,end):
           if(dr):
             i = p2
             while(p1<i):
+                if(arr[i]<x):
+                    arr[p1] = arr[i]
+                    p1 += 1
+                    p2 = i
+                    
+                i -= 1
             else:
+                p2 = p1
 
         else:
 
